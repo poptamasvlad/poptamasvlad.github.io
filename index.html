@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vlad CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Poptamas Vlad</h1>
+      <img
+        src="https://t3.ftcdn.net/jpg/03/12/74/76/360_F_312747672_VsTRaHC2Vyyp2tADEspHQMAaoTaqxo3J.jpg"
+        width="100"
+      />
+      <h2 id="job-title">Student FastTrackIT</h2>
+
+      <p style="color: blue; text-align: right">
+        <strong>Welcome</strong> to my site
+      </p>
+
+      <ul id="top-menu-bar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Known Languages</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </header>
+
+    <section id="content">
+      <div id="site-menu">
+        <section>
+          <form action="">
+            <div>
+              <label for="subscriberEmail">Enter your Email</label>
+              <input
+                type="email"
+                required
+                name="email"
+                id="subscriberEmail"
+                placeholder="your@email.com"
+              />
+            </div>
+            <div>
+              <label for="subscriber">Name:</label>
+              <input
+                type="text"
+                required
+                name="nume"
+                id="subscriber"
+                placeholder="Full Name"
+              />
+            </div>
+            <button type="submit">Subscribe</button>
+          </form>
+        </section>
+        <section>To Do</section>
+      </div>
+      <div id="main">
+        <div class="page">
+          <h2 style="color: rgb(59, 149, 201)">Skills</h2>
+
+          <ul id="skills-list"></ul>
+        </div>
+
+        <div class="page">
+          <h2 style="color: rgb(59, 149, 201)">Known Langauges</h2>
+          <table border="1">
+            <tr>
+              <th style="background-color: rgba(53, 200, 216, 0.521)">
+                Language
+              </th>
+              <th style="background-color: rgba(53, 200, 216, 0.521)">Level</th>
+            </tr>
+            <tr>
+              <td>Romanian</td>
+              <td>Native</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Proficient</td>
+            </tr>
+            <tr>
+              <td>French</td>
+              <td>Begginer</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a target="_blank" href="https://www.google.com">Google</a>
+    </footer>
+
+    <script src="index.js"></script>
+
+    <script>
+      console.info("page Loaded");
+      console.debug(2 + 3);
+
+      var age;
+      var employed = false;
+      console.warn(employed);
+
+      var skills = ["html", "css", "js", "c++", "c#"];
+
+      var vlad = {
+        age: 21,
+        employed: false,
+      };
+
+      var jobTitle = document.getElementById("job-title");
+    </script>
+  </body>
+</html>
