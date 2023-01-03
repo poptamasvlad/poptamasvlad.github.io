@@ -23,17 +23,6 @@ var skills = ["HTML", "CSS", "JS", "C++", "C#"];
 var skillsHtml = "";
 var i = 0;
 
-// skillsHtml += "<li>" + skills[i] + "</li>";
-// i++;
-// skillsHtml += "<li>" + skills[i] + "</li>";
-// i++;
-// skillsHtml += "<li>" + skills[i] + "</li>";
-// i++;
-// skillsHtml += "<li>" + skills[i] + "</li>";
-// i++;
-// skillsHtml += "<li>" + skills[i] + "</li>";
-// i++;
-
 for (var i = 0; i < skills.length; i++) {
   skillsHtml += "<li>" + skills[i] + "</li>";
 }
