@@ -58,6 +58,7 @@ td {
 }
 
 .page {
+  display: none;
   border: 2px solid #e0dfdc;
   background-color: #fff;
   padding: 0 10px 0 10px;

@@ -10,3 +10,5 @@ for (var i = 0; i < skills.length; i++) {
 }
 
 skillsEl.innerHTML = skillsHtml;
+
+document.getElementById("home").style.display = "block";
