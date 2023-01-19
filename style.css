@@ -59,6 +59,7 @@ td {
 
 .page {
   display: none;
+  height: 100%;
   border: 2px solid #e0dfdc;
   background-color: #fff;
   padding: 0 10px 0 10px;
@@ -89,6 +90,16 @@ td {
 #top-menu-bar a:hover {
   color: #334455;
   background: #fff;
+  border-radius: 5px;
+}
+
+#top-side-menu {
+  display: none;
+  border: 2px solid #b8c9d1;
+  background-color: rgb(227, 238, 245);
+  padding: 0 10px 0 10px;
+  margin-bottom: 10px;
+  border-radius: 0.8rem;
 }
 
 .container {
@@ -111,6 +122,26 @@ td {
 
 img {
   border-radius: 50%;
+}
+
+footer {
+  text-align: center;
+  background-color: #5d7791;
+  color: #fff;
+  margin: 0;
+}
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 3px 8px;
+}
+
+footer a :hover {
+  color: #334455;
+  background: #fff;
+  border-radius: 5px;
 }
 /*
 .dot {
