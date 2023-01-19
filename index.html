@@ -23,13 +23,13 @@
       </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#" onclick="displayPage('home')">Home</a></li>
-        <li><a href="#" onclick="displayPage('skills')">Skills</a></li>
+        <li><a href="#" data-page="home">Home</a></li>
+        <li><a href="#" data-page="skills">Skills</a></li>
         <li>
-          <a href="#" onclick="displayPage('languages')">Known Languages</a>
+          <a href="#" data-page="languages">Known Languages</a>
         </li>
-        <li><a href="#" onclick="displayPage('projects')">Projects</a></li>
-        <li><a href="#" onclick="displayPage('sudoku')">Sudoku</a></li>
+        <li><a href="#" data-page="projects">Projects</a></li>
+        <li><a href="#" data-page="sudoku">Sudoku</a></li>
       </ul>
     </header>
 
@@ -112,8 +112,9 @@
     </section>
 
     <footer>
-      <img src="github logo.png" width="15" />
-      <a target="_blank" href="https://poptamasvlad.github.io/">Github</a>
+      <a target="_blank" href="https://poptamasvlad.github.io/"
+        ><img src="github logo.png" width="15" />Github</a
+      >
     </footer>
 
     <script src="index.js"></script>
