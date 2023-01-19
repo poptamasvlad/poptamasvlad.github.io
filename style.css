@@ -109,21 +109,6 @@ td {
   background-image: linear-gradient(to bottom right, #3c556e, white);
 }
 
-.image {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.text {
-  font-size: 20px;
-  padding-left: 20px;
-  line-height: 0.7;
-}
-
-img {
-  border-radius: 50%;
-}
-
 footer {
   text-align: center;
   background-color: #5d7791;
@@ -143,6 +128,31 @@ footer a :hover {
   background: #fff;
   border-radius: 5px;
 }
+
+footer img {
+  border-radius: 50%;
+}
+
+#header-wrapper {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to bottom right, #3c556e, white);
+}
+
+#header-wrapper h1 {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+#header-wrapper h2 {
+  margin: 5px;
+}
+
+#header-wrapper img {
+  border-radius: 50%;
+  border: 5px solid #057988;
+}
+
 /*
 .dot {
   height: 100px;
