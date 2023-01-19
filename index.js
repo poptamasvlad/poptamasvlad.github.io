@@ -8,13 +8,11 @@ var skills = [
   { name: "C#", endorcements: 1 },
 ];
 
-var skillsHtml = "";
-
-skills.forEach(function (skill) {
-  skillsHtml += "<li>" + skill.name + " - " + skill.endorcements + "</li>";
+var skillsHTML = skills.map(function (skill) {
+  return "<li>" + skill.name + " - " + skill.endorcements + "</li>";
 });
 
-skillsEl.innerHTML = skillsHtml;
+skillsEl.innerHTML = skillsHTML.join("");
 
 function hideAllPages() {
   var pages = document.querySelectorAll(".page");
@@ -38,8 +36,6 @@ function displayPage(id) {
 }
 
 function initMenu() {
-  console.warn("init menu");
-
   document
     .getElementById("top-menu-bar")
     .addEventListener("click", function (e) {
