@@ -1,13 +1,13 @@
 const r1 = fetch("skills.json");
-r1.then(function (raspuns) {
+r1.then((raspuns) => {
   const r2 = raspuns.json();
-  r2.then(function (skills) {
+  r2.then((skills) => {
     displaySkills(skills);
   });
 });
 
 function displaySkills(skills) {
-  const skillsHTML = skills.map(function (skill) {
+  const skillsHTML = skills.map((skill) => {
     return `<li>${skill.name} - <span>${skill.endorcements}</span></li>`;
   });
   const skillsEl = document.getElementById("skills-list");
@@ -16,7 +16,7 @@ function displaySkills(skills) {
 
 function hideAllPages() {
   const pages = document.querySelectorAll(".page");
-  pages.forEach(function (page) {
+  pages.forEach((page) => {
     hide(page.id);
   });
 }
@@ -35,15 +35,21 @@ function displayPage(id) {
 }
 
 function initMenu() {
-  document
-    .getElementById("top-menu-bar")
-    .addEventListener("click", function (e) {
-      if (e.target.matches("a")) {
-        const id = e.target.getAttribute("data-page");
-        displayPage(id);
-      }
-    });
+  document.getElementById("top-menu-bar").addEventListener("click", (e) => {
+    if (e.target.matches("a")) {
+      const id = e.target.getAttribute("data-page");
+      displayPage(id);
+    }
+  });
 }
 
 displayPage("skills");
 initMenu();
+
+const f1 = function () {
+  return "arrow";
+};
+
+const f2 = () => {
+  return "arrow";
+};
